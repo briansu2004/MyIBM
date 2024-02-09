@@ -17,3 +17,32 @@ Some key features and capabilities of IBM DataPower include:
 6. Monitoring and management: It provides comprehensive monitoring and management capabilities, including real-time visibility into traffic, performance metrics, and centralized administration through a web-based interface or command-line interface (CLI).
 
 IBM DataPower Gateway plays a crucial role in enabling secure and efficient communication and integration within complex enterprise architectures, helping organizations achieve greater agility, flexibility, and reliability in their IT infrastructure.
+
+## DataPower Docker Image
+
+```dos
+docker login cp.icr.io -u cp -p myEntitlementKey
+
+docker pull ibmcom/datapower:latest
+
+docker run -it -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true -p 9099:9099 --name DataPowerInWin ibmcom/datapower
+
+docker run -d -p 2200:22 -p 9090:9090 --name unit-test registry.ng.bluemix.net/hstenzel/datapower-sample
+```
+
+<!-- docker run -it -v $PWD/config:/drouter/config -v $PWD/local:/drouter/local -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true -p 9099:9099 --name DataPowerInWin ibmcom/datapower -->
+
+Unix
+
+```shell
+docker run -it –-name name \
+-v $(pwd)/config:/opt/ibm/datapower/drouter/config \
+-v $(pwd)/local:/opt/ibm/datapower/drouter/local \
+-v $(pwd)/certs:/opt/ibm/datapower/root/secure/usrcerts \
+-e DATAPOWER_ACCEPT_LICENSE="true" \
+-e DATAPOWER_INTERACTIVE="true" \
+-p 9090:9090 \
+tag
+```
+
+`https://github.com/ibm-datapower/datapower-tutorials`
