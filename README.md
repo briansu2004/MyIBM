@@ -4,6 +4,13 @@ My IBM
 
 ## My IBM Projects
 
+```text
+When I worked for ..., I used many IBM products in many of my projects, including the following:
+- IBM Integration Bus (IIB): I utilized IBM Integration Bus to design, develop, and deploy integration solutions that facilitate communication and data exchange between disparate systems. This involved configuring message flows, transforming data formats, and implementing message routing and mediation logic to enable seamless integration across heterogeneous environments.
+- IBM MQ: I worked with IBM MQ to establish reliable and secure message queuing mechanisms for asynchronous communication between applications and systems. This included setting up queues, defining message formats, implementing message persistence and delivery guarantees, and managing message brokers to ensure the timely and reliable exchange of messages.
+- Other IBM Products: In addition to IIB and MQ, I have also worked with other IBM products such as InfoSphere MDM (Master Data Management), WebSphere Application Server, IBM DB2, DataStage, QualityStage, and IBM Rational Application Developer (RAD). This comprehensive exposure to various IBM technologies has equipped me with a deep understanding of IBM's ecosystem and its capabilities across different domains and use cases.
+```
+
 ### Project 33 - Refactored a commercial banking PaaS application for client National Bank of Canada
 
 - Designed ETL tables in MS SQL Server based on the new business requirements

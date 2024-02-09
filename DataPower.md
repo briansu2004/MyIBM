@@ -25,10 +25,17 @@ docker login cp.icr.io -u cp -p myEntitlementKey
 
 docker pull ibmcom/datapower:latest
 
+docker pull icr.io/cpopen/datapower/datapower-limited:10.5.0.5
+docker pull icr.io/appc-dev/ace-server:latest
+docker pull icr.io/ibm-messaging/mq:9.3.2.1-r2-amd64
+docker pull icr.io/appcafe/open-liberty:23.0.0.5-kernel-slim-java8-openj9-ubi-amd64
+```
+
+<!-- ```dos
 docker run -it -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true -p 9099:9099 --name DataPowerInWin ibmcom/datapower
 
 docker run -d -p 2200:22 -p 9090:9090 --name unit-test registry.ng.bluemix.net/hstenzel/datapower-sample
-```
+``` -->
 
 <!-- docker run -it -v $PWD/config:/drouter/config -v $PWD/local:/drouter/local -e DATAPOWER_ACCEPT_LICENSE=true -e DATAPOWER_INTERACTIVE=true -p 9099:9099 --name DataPowerInWin ibmcom/datapower -->
 
